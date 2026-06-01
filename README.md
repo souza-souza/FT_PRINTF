@@ -1,6 +1,6 @@
 # ft_printf
 
-Repository containing the implementation of the standard C library function `printf`.
+*This project has been created as part of the 42 curriculum by andede-s*
 
 ## About
 
