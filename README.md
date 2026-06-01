@@ -1,48 +1,48 @@
 # ft_printf
 
-Repositório com a implementação da função `printf` da biblioteca padrão em C.
+Repository containing the implementation of the standard C library function `printf`.
 
-## Sobre
+## About
 
-O projeto **ft_printf** consiste em recriar a função `printf` da biblioteca padrão da linguagem C, com o objetivo de compreender melhor o funcionamento de funções variádicas, formatação de strings e manipulação de diferentes tipos de dados.
+The **ft_printf** project consists of recreating the standard C `printf` function. The goal is to better understand variadic functions, string formatting, and handling different data types in C.
 
-Este projeto faz parte do currículo da 42 e tem como foco o desenvolvimento de uma implementação robusta e modular.
+This project is part of the 42 curriculum and focuses on building a robust and modular implementation from scratch.
 
-## Conteúdo
+## Contents
 
-- Implementação da função `ft_printf`
-- Manipulação de funções variádicas (`stdarg.h`)
-- Conversão e impressão de diferentes tipos:
+- Implementation of `ft_printf`
+- Handling variadic functions (`stdarg.h`)
+- Conversion and printing of different types:
   - char
   - string
   - pointer
   - int / unsigned int
   - hexadecimal (lowercase / uppercase)
-- Gestão de formatação de output
+- Output formatting management
 
-## Funcionalidades
+## Features
 
-A função suporta os seguintes especificadores:
+The function supports the following format specifiers:
 
-- `%c` — Caractere
+- `%c` — Character
 - `%s` — String
-- `%p` — Pointer
-- `%d` — Inteiro com sinal
-- `%i` — Inteiro
-- `%u` — Inteiro sem sinal
-- `%x` — Hexadecimal (minúsculas)
-- `%X` — Hexadecimal (maiúsculas)
-- `%%` — Percentagem
+- `%p` — Pointer address
+- `%d` — Signed decimal integer
+- `%i` — Signed integer
+- `%u` — Unsigned integer
+- `%x` — Hexadecimal (lowercase)
+- `%X` — Hexadecimal (uppercase)
+- `%%` — Percent sign
 
-## Objetivos
+## Objectives
 
-- Compreender funções variádicas
-- Reproduzir comportamento da função `printf`
-- Melhorar lógica de manipulação de strings
-- Aprender gestão de tipos e conversões em C
-- Desenvolver código modular e reutilizável
+- Understand variadic functions
+- Recreate the behavior of the `printf` function
+- Improve string manipulation logic
+- Learn type handling and conversions in C
+- Develop modular and reusable code
 
-## Estrutura
+## Structure
 
 ```text
 .
@@ -53,25 +53,25 @@ A função suporta os seguintes especificadores:
 └── ...
 ```
 
-## Compilação
+## Compilation
 
 ```bash
 make
 ```
 
-Limpar objetos:
+Clean object files:
 
 ```bash
 make clean
 ```
 
-Remover tudo:
+Remove all compiled files:
 
 ```bash
 make fclean
 ```
 
-Recompilar:
+Recompile:
 
 ```bash
 make re
