@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_printf.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: andede-s <andede-s@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/01 16:24:12 by andede-s          #+#    #+#             */
-/*   Updated: 2026/06/01 16:29:09 by andede-s         ###   ########.fr       */
+/*   Created: 2026/06/01 16:22:19 by andede-s          #+#    #+#             */
+/*   Updated: 2026/06/01 16:34:35 by andede-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
-# include <stdlib.h>
-# include <stdio.h>
-# include <unistd.h>
-# include <stdarg.h>
+#include "ft_printf.h"
 
-void	ft_putchar(char c);
-void	ft_putstr(char *str);
+int ft_printf(const char *, ...)
+{
 
-
-
-#endif
+}
