@@ -1,6 +1,6 @@
 # ft_printf
 
-*This project has been created as part of the 42 curriculum by andede-s*
+*This project has been created as part of the 42 curriculum by andede-s*.
 
 ## About
 

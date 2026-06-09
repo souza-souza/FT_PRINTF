@@ -1,13 +1,12 @@
 #include "ft_printf.h"
 
-void	ft_putint(int n)
+void	ft_putunint(int n)
 {
 	long	nb;
 
 	nb = n;
 	if (nb < 0)
 	{
-		ft_putchar('-');
 		nb = -nb;
 	}
 	if (nb >= 10)
@@ -20,8 +19,9 @@ void	ft_putint(int n)
 		ft_putchar(nb + '0');
 	}
 }
-/*int	main()
+/*
+int	main()
 {
-	ft_putint(-4363.5);
+	ft_putunint(6867676);
 	return (0);
 }*/
