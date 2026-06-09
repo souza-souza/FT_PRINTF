@@ -47,7 +47,7 @@ The function supports the following format specifiers:
 ```text
 .
 ├── ft_printf.c
-├── ft_printf_utils.c
+├── ft_*.c
 ├── ft_printf.h
 ├── Makefile
 └── ...
