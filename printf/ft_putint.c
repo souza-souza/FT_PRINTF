@@ -1,27 +1,30 @@
 #include "ft_printf.h"
 
-void	ft_putint(int n)
+int	ft_putint(int n)
 {
 	long	nb;
+	int	count;
 
+	count = 0;
 	nb = n;
 	if (nb < 0)
 	{
-		ft_putchar('-');
+		count += ft_putchar('-');
 		nb = -nb;
 	}
 	if (nb >= 10)
 	{
-		ft_putint(nb / 10);
-		ft_putint(nb % 10);
+		count += ft_putint(nb / 10);
+		count += ft_putint(nb % 10);
 	}
 	else
 	{
-		ft_putchar(nb + '0');
+		count += ft_putchar(nb + '0');
 	}
+	return (count);
 }
 /*int	main()
 {
-	ft_putint(-4363.5);
+	printf("%i", ft_putint(34));
 	return (0);
 }*/

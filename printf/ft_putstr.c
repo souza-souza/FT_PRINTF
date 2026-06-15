@@ -1,9 +1,12 @@
 #include "ft_printf.h"
 
-void	ft_putstr(char *str)
+int	ft_putstr(char *str)
 {
     if (!str)
-        write(1, NULL, 1);
+	{
+        write(1, "(null)", 6);
+		return (6);
+	}
     
     int	i;
 
@@ -13,4 +16,11 @@ void	ft_putstr(char *str)
 		write(1, &str[i], 1);
 		i++;
 	}
+	return (i);
 }
+/*int	main()
+{
+	char str [] = "alo gente bonita";
+	printf("%d", ft_putstr(str));
+	return (0);
+}*/

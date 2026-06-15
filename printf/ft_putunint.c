@@ -1,27 +1,25 @@
 #include "ft_printf.h"
 
-void	ft_putunint(int n)
+int	ft_putunint(unsigned int n)
 {
 	long	nb;
+	int	count;
 
+	count = 0;
 	nb = n;
-	if (nb < 0)
-	{
-		nb = -nb;
-	}
 	if (nb >= 10)
 	{
-		ft_putint(nb / 10);
-		ft_putint(nb % 10);
+		count += ft_putunint(nb / 10);
+		count += ft_putunint(nb % 10);
 	}
 	else
 	{
-		ft_putchar(nb + '0');
+		count += ft_putchar(nb + '0');
 	}
+	return (count);
 }
-/*
-int	main()
+/*int	main()
 {
-	ft_putunint(6867676);
+	printf("%d", ft_putunint(-67));
 	return (0);
 }*/
